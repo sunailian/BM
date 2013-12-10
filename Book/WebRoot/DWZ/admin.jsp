@@ -7,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=7" />
     <title>临沂大学图书管理系统</title>
 	
-    <link href="DWZ/themes/default/style.css" rel="stylesheet" type="text/css" media="screen"/>
-    <link href="DWZ/themes/css/core.css" rel="stylesheet" type="text/css" media="screen"/>
-    <link href="DWZ/themes/css/print.css" rel="stylesheet" type="text/css" media="print"/>
-    <link href="DWZ/uploadify/css/uploadify.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="/DWZ/themes/default/style.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="/DWZ/themes/css/core.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="/DWZ/themes/css/print.css" rel="stylesheet" type="text/css" media="print"/>
+    <link href="/DWZ/uploadify/css/uploadify.css" rel="stylesheet" type="text/css" media="screen"/>
     <!--[if IE]>
     <link href="DWZ/themes/css/ieHack.css" rel="stylesheet" type="text/css" media="screen"/>
     <![endif]-->
@@ -18,66 +18,61 @@
 		#header{height:73px}
 		#leftside, #container, #splitBar, #splitBarProxy{top:75px}
 	</style>
-	<!-- createTree -->
-	<script src="page/common/js/ajax.js" type="text/javascript"></script>
-	  <script src="page/common/js/treeMenu.js" type="text/javascript"></script>
-	<!-- end creatTree -->
-	<script src="DWZ/js/speedup.js" type="text/javascript"></script>
-	<script src="DWZ/js/jquery-1.7.2.js" type="text/javascript"></script>
-	<script src="DWZ/js/jquery.cookie.js" type="text/javascript"></script>
-	<script src="DWZ/js/jquery.validate.js" type="text/javascript"></script>
-	<script src="DWZ/js/jquery.bgiframe.js" type="text/javascript"></script>
-	<script src="DWZ/xheditor/xheditor-1.1.14-zh-cn.min.js" type="text/javascript"></script>
-    <script src="DWZ/uploadify/scripts/swfobject.js" type="text/javascript"></script>
-    <script src="DWZ/uploadify/scripts/jquery.uploadify.v2.1.0.js" type="text/javascript"></script>
+	<script src="/DWZ/js/speedup.js" type="text/javascript"></script>
+	<script src="/DWZ/js/jquery-1.7.2.js" type="text/javascript"></script>
+	<script src="/DWZ/js/jquery.cookie.js" type="text/javascript"></script>
+	<script src="/DWZ/js/jquery.validate.js" type="text/javascript"></script>
+	<script src="/DWZ/js/jquery.bgiframe.js" type="text/javascript"></script>
+	<script src="/DWZ/xheditor/xheditor-1.1.14-zh-cn.min.js" type="text/javascript"></script>
+    <script src="/DWZ/uploadify/scripts/swfobject.js" type="text/javascript"></script>
+    <script src="/DWZ/uploadify/scripts/jquery.uploadify.v2.1.0.js" type="text/javascript"></script>
 	
 	<!-- svg图表  supports Firefox 3.0+, Safari 3.0+, Chrome 5.0+, Opera 9.5+ and Internet Explorer 6.0+ -->
-	<script src="DWZ/chart/raphael.js" type="text/javascript"></script>
-	<script src="DWZ/chart/g.raphael.js" type="text/javascript"></script>
-	<script src="DWZ/chart/g.bar.js" type="text/javascript"></script>
-	<script src="DWZ/chart/g.line.js" type="text/javascript"></script>
-	<script src="DWZ/chart/g.pie.js" type="text/javascript"></script>
-	<script src="DWZ/chart/g.dot.js" type="text/javascript"></script>
+	<script src="/DWZ/chart/raphael.js" type="text/javascript"></script>
+	<script src="/DWZ/chart/g.raphael.js" type="text/javascript"></script>
+	<script src="/DWZ/chart/g.bar.js" type="text/javascript"></script>
+	<script src="/DWZ/chart/g.line.js" type="text/javascript"></script>
+	<script src="/DWZ/chart/g.pie.js" type="text/javascript"></script>
+	<script src="/DWZ/chart/g.dot.js" type="text/javascript"></script>
 
-	<script src="DWZ/js/dwz.core.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.util.date.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.validate.method.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.regional.zh.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.barDrag.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.drag.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.tree.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.accordion.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.ui.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.theme.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.switchEnv.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.alertMsg.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.contextmenu.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.navTab.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.tab.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.resize.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.dialog.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.dialogDrag.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.sortDrag.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.cssTable.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.stable.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.taskBar.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.ajax.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.pagination.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.database.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.datepicker.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.effects.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.panel.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.checkbox.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.history.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.combox.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.print.js" type="text/javascript"></script>
-	<script src="DWZ/js/dwz.my.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.core.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.util.date.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.validate.method.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.regional.zh.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.barDrag.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.drag.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.tree.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.accordion.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.ui.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.theme.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.switchEnv.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.alertMsg.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.contextmenu.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.navTab.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.tab.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.resize.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.dialog.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.dialogDrag.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.sortDrag.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.cssTable.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.stable.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.taskBar.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.ajax.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.pagination.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.database.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.datepicker.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.effects.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.panel.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.checkbox.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.history.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.combox.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.print.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.my.js" type="text/javascript"></script>
 	<!--
 	<script src="DWZ/bin/dwz.min.js" type="text/javascript"></script>
 	-->
-	<script src="DWZ/js/dwz.regional.zh.js" type="text/javascript"></script>
+	<script src="/DWZ/js/dwz.regional.zh.js" type="text/javascript"></script>
 	<script src="js/calendar/WdatePicker.js" type="text/javascript"></script>
-	<script src="page/as/repair/js/LodopFuncs.js" type="text/javascript"></script>
 	
 	<script type="text/javascript">
 	var main = '${pageContext.request.contextPath}';
@@ -142,7 +137,7 @@
 					</div>
 					<div class="accordionContent">
 						<ul class="tree treeFolder">
-						    <li><a href=" " target="navTab" rel="main">我的个人信息</a></li>
+						    <li><a href="findStuInfo.c" target="navTab" rel="main" title="我的个人信息">我的个人信息</a></li>
 						</ul>
 					</div>
 					<div class="accordionHeader">
@@ -186,9 +181,6 @@
 					<div class="tabsRight">right</div><!-- 禁用只需要添加一个样式 class="tabsRight tabsRightDisabled" -->
 					<div class="tabsMore">more</div>
 				</div>
-				<ul class="tabsMoreList">
-					<li><a href="javascript:;">我的主页</a></li>
-				</ul>
 			</div>
 		</div>
 

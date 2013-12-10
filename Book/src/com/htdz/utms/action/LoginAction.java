@@ -55,6 +55,24 @@ public class LoginAction extends BaseAction {
 				return FAILURE;
 			}
 		}
+		session.setAttribute("SESSION_USER", student);
+		return SUCCESS;
+	}
+	
+	
+	
+	/**
+	 * 读者信息查询
+	 * @date 2013-12-10
+	 * @return
+	 */
+	@Action(value = "findStuInfo", results = {
+			@Result(name = "success", location = "/page/student/student.jsp"),
+			@Result(name = "failure", location = "/DWZ/login.jsp") })
+	public String findStuInfo(){
+		student=(Student) session.getAttribute("SESSION_USER");
+		if(student==null)
+			return FAILURE;
 		return SUCCESS;
 	}
 
