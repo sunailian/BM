@@ -1,0 +1,157 @@
+*{
+  word-wrap: break-word;
+}
+a,a:hover,a:active,a:link,a:visited {	
+	text-decoration: none;
+}
+.button {		
+	cursor: pointer;
+	height: 22px;
+	border:1px solid #55a0ff;
+}
+
+.button_over {	
+	cursor: pointer;
+	height: 22px;
+	border:1px dashed #4E7F9F;
+	display:inline;
+}
+.tou {
+	font-weight: bold;
+	font-size: 13pt;
+	color: #000;
+	font-family: 楷体_GB2312, 仿宋_GB2312, 华文新魏, 华文中宋;
+}
+#mydiv {
+	width: 100%;
+	padding-BOTTOM: 2px;
+	padding-LEFT: 5px;
+	padding-RIGHT: 5px;
+	padding-top: 1px;
+	white-space: nowrap;
+}
+
+/* 报表 、查询信息*/
+#mytable {
+	border-right: #000000 1pt solid;
+	border-top: #000 2pt solid;
+	border-left: #000000 0pt solid;
+	border-bottom: #000 2pt solid;
+	border-collapse: collapse;
+	width: 99%;	
+}
+#mytable p{
+	text-indent:2em;
+}
+#mytable caption { /*表标题*/
+	padding-top: 3pt;
+	padding-bottom: 3pt;
+	font-size: 15pt;
+	font-weight: bold;
+	text-align: center;
+	font-family: "楷体_gb2312", "仿宋_gb2312";
+}
+
+#mytable caption span{
+	display:block;
+	margin-top: 6pt;
+	margin-bottom: 6pt;
+	padding:0pt;
+	font-size: 9pt;
+	font-weight: normal;
+	text-align: center;
+	font-family: "宋体", "Arial", "Times New Roman";
+}
+
+#mytable thead td {
+	font-size: 11pt;
+	font-weight: bold;
+	border-bottom: #000000 1pt solid;
+	border-left: #000000 1pt solid;
+	text-align: center;
+	background:#ffffff;
+}
+#mytable th {
+	border: 1pt solid #000000;
+	padding: 2pt;
+	font-size: 9pt;
+	font-weight: bold;
+	text-align: center;
+	background:#ffffff;
+}
+#mytable td {
+	border: 1pt solid #000000;
+	padding: 2pt;
+	font-size: 9pt;
+	font-weight: normal;
+	background:#ffffff;
+}
+#mytable tfoot tr td {
+	font-weight: bold;
+}
+
+
+
+#mydetail {
+	border-right: #000000 1pt solid;
+	border-top: #000 2pt solid;
+	border-left: #000000 0pt solid;
+	border-bottom: #000 2pt solid;
+	border-collapse: collapse;
+	width: 99%;	
+}
+#mydetail p{
+	text-indent:2em;
+}
+#mydetail caption { /*表标题*/
+	padding-top: 3pt;
+	padding-bottom: 3pt;
+	font-size: 15pt;
+	font-weight: bold;
+	text-align: center;
+	font-family: "楷体_gb2312", "仿宋_gb2312";
+}
+
+#mydetail caption span{
+	display:block;
+	margin-top: 6pt;
+	margin-bottom: 6pt;
+	padding:0pt;
+	font-size: 9pt;
+	font-weight: normal;
+	text-align: center;
+	font-family: "宋体", "Arial", "Times New Roman";
+}
+
+#mydetail thead td {
+	font-size: 11pt;
+	font-weight: bold;
+	border-bottom: #000000 1pt solid;
+	border-left: #000000 1pt solid;
+	text-align: center;
+}
+#mydetail th {
+	border: 1pt solid #000000;
+	padding: 2pt;
+	font-size: 9pt;
+	font-weight: bold;
+	text-align: right;
+	background:#ffffff;
+}
+#mydetail td {
+	background:#ffffff;
+	border: 1pt solid #000000;
+	padding: 2pt;
+	font-size: 9pt;
+	font-weight: normal;
+}
+#mydetail tfoot tr td {
+	font-weight: bold;
+}
+
+/* 将多张表纳入此表中，然后用此表导出EXCEL*/
+#myexcel {
+	border: 0pt;
+	width: 100%;
+	font-size: 9pt;
+}

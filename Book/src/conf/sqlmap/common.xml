@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE sqlMap
+    PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+    
+<sqlMap namespace="common">
+
+  <typeAlias alias="student" type="com.htdz.utms.model.Student"/>
+  
+  <!--查找学生信息  -->
+  <select id="findStuInfo" parameterClass="student" resultClass="student">
+    SELECT studentno AS studentno,password AS password1,
+           name AS name,age AS age,gender AS gender,
+           stuclass AS stuclass,department AS department,
+           permitted AS permitted
+     FROM STUDENT
+     WHERE studentno=#studentno# AND password=#password1#
+  </select>
+    
+    
+</sqlMap>

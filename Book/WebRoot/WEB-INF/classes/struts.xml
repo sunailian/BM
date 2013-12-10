@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>   
+<!DOCTYPE struts PUBLIC   
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"  
+        "http://struts.apache.org/dtds/struts-2.0.dtd">   
+<struts>   
+
+    <constant name="struts.locale" value="zh_CN" />
+    <constant name="struts.objectFactory" value="spring" />
+    <constant name="struts.action.extension" value="c" />
+    <constant name="struts.custom.i18n.resources" value="messages,ApplicationResources" />
+    <constant name="struts.i18n.encoding" value="UTF-8" />
+    <constant name="struts.multipart.parser" value="jakarta" />
+    <constant name="struts.multipart.saveDir" value="D:/proj/utms/temp" />
+    <constant name="struts.multipart.maxSize" value="10485760" />
+    <constant name="struts.i18n.reload" value="false" />
+    <constant name="struts.devMode" value="true" />
+    <constant name="struts.convention.classes.reload" value="true" />
+    <constant name="struts.convention.default.parent.package" value="htepay" />
+    <constant name="struts.ui.theme" value="simple" />
+    <constant name="struts.ognl.allowStaticMethodAccess" value="true" />
+  
+    <package name="htepay" extends="struts-default">   
+    
+        <interceptors>
+        
+			<!-- 拦截器：去除请求参数左右空格 -->
+			<interceptor name="trim"
+				class="com.htdz.security.TrimInterceptor" />	
+			<!-- 拦截器：去除所有HTML -->
+			<interceptor name="removeAllHTML"
+				class="com.htdz.security.RemoveAllHTMLInterceptor" />
+			<!-- 拦截器：去除非法HTML -->
+			<interceptor name="removeInvalidHTML"
+				class="com.htdz.security.RemoveInvalidHTMLInterceptor" />
+			<!-- 拦截器：去除数据库保留字 (如：%_')-->
+			<interceptor name="removeDBKeyword"
+				class="com.htdz.security.RemoveDBKeywordInterceptor" />
+			<!-- 拦截器：去除所有HTML+数据库保留字 -->
+			<interceptor name="removeInvalidInput"
+				class="com.htdz.security.RemoveInvalidInputInterceptor" />
+				
+            <interceptor name="exception" class="com.htdz.exception.ExceptionInterceptor" />
+            
+            <!-- stack拦截器栈-->
+			<interceptor-stack name="stack">
+			    <interceptor-ref name="defaultStack" />
+				<interceptor-ref name="trim" />
+				<interceptor-ref name="exception" />
+	        </interceptor-stack>
+			
+			<!-- stackWithoutAccess拦截器栈-->
+			<interceptor-stack name="stackWithoutAccess">
+			    <interceptor-ref name="defaultStack" />
+				<interceptor-ref name="trim" />
+				<interceptor-ref name="removeInvalidInput" />
+				<interceptor-ref name="exception" />
+	        </interceptor-stack>
+	        
+	    </interceptors>
+	    
+	    <!-- 默认的拦截器栈 -->
+		<default-interceptor-ref name="stack" />
+		
+		<global-results>
+		    <result name="invalid.token">/page/public/norefresh.jsp</result>
+	        <result name="exception">/page/public/exception.jsp</result>
+	        <result name="500">/page/public/500.jsp</result>
+	        <result name="checkUser">/page/redirectLogin.jsp</result>
+	        <result name="systemOut">/page/public/systemOut.jsp</result>
+		</global-results>
+		
+    </package>  
+    
+</struts>  

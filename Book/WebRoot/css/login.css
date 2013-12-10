@@ -1,0 +1,27 @@
+/** Login style **/
+html{height:100%;}
+body{margin:0px; font-size:9pt; height:100%;SCROLLBAR-BASE-COLOR: #E5EFFF;}
+table{font-size:9pt;}
+th{font-weight:normal;text-align:left;}
+input{font-size:9pt;}
+
+#login{margin-top:85px;}
+#login #container{background:url(../images/login/login_body.png) repeat-x left top; }
+
+#login #header{display:none;}
+#login #header h1{}
+
+#login #content{width:580px;height:310px; background-image:url(../images/login/login_conten.jpg);background-repeat:no-repeat; margin:auto;ss}
+
+
+#login #content table{margin-left:330px; padding-top:80px;*padding-top:0px; margin-top:0px; *margin-top:80px;}
+#login #content table td{padding-bottom:3px;}
+#login #content table td select{font-size:10pt;width:136px;}
+#login #content table td input{ width:130px;font-size:9pt;height:14px}
+#login #content table td a:link,#login #content table td a:visited{color:#000;line-height:20px}
+#login #content table td a:hover{color:red;line-height:20px}
+#login #content table td img{border:none;}
+#login #content table tfoot td{text-align:right;padding-top:10px;}
+
+#login #footer{display:none;}
+
